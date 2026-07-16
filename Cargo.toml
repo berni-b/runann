@@ -1,0 +1,25 @@
+[package]
+name = "runann"
+version = "0.1.0"
+edition = "2021"
+description = "A minimal feed-forward neural network library — Rust port of genann"
+license = "Zlib"
+
+[dependencies]
+rand = "0.9"
+
+[[example]]
+name = "xor_backprop"
+path = "examples/xor_backprop.rs"
+
+[[example]]
+name = "xor_random"
+path = "examples/xor_random.rs"
+
+[[example]]
+name = "load_and_run"
+path = "examples/load_and_run.rs"
+
+[[example]]
+name = "iris"
+path = "examples/iris.rs"
