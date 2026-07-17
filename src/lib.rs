@@ -58,8 +58,15 @@
 //! Activation functions are **not** persisted (not part of the genann format).
 //! After loading, both activations default to [`Activation::SigmoidCached`];
 //! restore non-default activations manually if needed.
+//!
+//! ## CLI binary
+//!
+//! This crate also ships a `runann` binary that loads a YAML config file and
+//! provides `train` and `run` subcommands.  See the [`cli`] module and the
+//! project README for details.
 
 pub mod activation;
+pub mod cli;
 pub mod ann;
 pub mod error;
 mod forward;
