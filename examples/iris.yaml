@@ -1,0 +1,16 @@
+network:
+  inputs:            4
+  hidden_layers:     1
+  hidden:            8
+  outputs:           3
+  activation_hidden: sigmoid_cached
+  activation_output: sigmoid_cached
+
+training:
+  epochs:        5000
+  learning_rate: 0.5
+  shuffle:       false
+
+paths:
+  data:  examples/iris.data
+  model: iris.ann
